@@ -12,6 +12,15 @@
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+<style>
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  th, td { 
+    text-align: center;  
+  }
+</style>
 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
 
@@ -28,16 +37,8 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-left">
         <li><a href="#myPage">HOME</a></li>
-        <li><a href="#about">ABOUT US</a></li>
         <li><a href="#contact">CONTACT</a></li>
-        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">SOFTWARE
-          <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">School report card</a></li>
-            <li><a href="#">College report card</a></li>
-          </ul>
-        </li>
+        <li><a href="#dashboard">DASHBOARD</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="sign_up.html">SIGN UP</a></li>
@@ -46,26 +47,120 @@
     </div>
   </div>
 </nav>
-<br><br><br>
+<br><br><br><br>
 
 	<!-- corousel -->
 	<div id="#myPage" class="container">
 	<div id="slider-main">
 		<div id="slider-item">
-			<img src="https://images.pexels.com/photos/206395/pexels-photo-206395.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
-			<img src="https://images.pexels.com/photos/1391498/pexels-photo-1391498.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
-			<img src="https://images.pexels.com/photos/1382731/pexels-photo-1382731.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
-			<img src="https://images.pexels.com/photos/1758144/pexels-photo-1758144.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
-			<img src="https://images.pexels.com/photos/1382734/pexels-photo-1382734.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
-			<img src="https://images.pexels.com/photos/1462636/pexels-photo-1462636.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
-			<img src="https://images.pexels.com/photos/139829/pexels-photo-139829.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
-			<img src="https://images.pexels.com/photos/1758144/pexels-photo-1758144.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+			<img src="images/book1.png">
+			<img src="images/book2.png">
+			<img src="images/book3.jpg">
+      <img src="images/book4.jpg">
+      <img src="images/book5.png">
+      <img src="images/book6.jpg">
+      <img src="images/book7.jpg">
+      <img src="images/book8.jpg">
 		
 			<!-==========Text=============--> 
 			<p>Report Card Generator</p>
 		</div>
 		<div id="ground"></div>
 	</div>
+</div>
+<br><br><br><br>
+
+<!-- Dashboard -->
+<div id="dashboard" class="container">
+      <h2 class="text-center">Information About Report Card</h2><br>
+      <form class="form-container" action="inform.html" method="POST">
+      <div class="row">
+          <div class="col-sm-6 form-group">
+            <label>Name of the student</label>
+            <input type="text" class="form-control" id="student" placeholder="Enter Name of student" name="student" required>
+          </div>
+          <div class="col-sm-6 form-group">
+            <label>Date of birth</label>
+            <input type="date" class="form-control" id="birth" placeholder="Enter date of birth" name="birth" required>
+          </div>
+      </div>
+      <br>
+      <div class="row">
+          <div class="col-sm-6 form-group">
+            <label>Father's name</label>
+            <input type="text" class="form-control" id="father" placeholder="Enter father's name" name="father" required>
+          </div>
+          <div class="col-sm-6 form-group">
+            <label>Mother's name</label>
+            <input type="text" class="form-control" id="mother" placeholder="Enter mother's name" name="mother" required>
+          </div>
+      </div>
+      <br>
+      <div class="row">
+          <div class="col-sm-6 form-group">
+            <label>Address</label>
+            <input type="text" class="form-control" id="address" placeholder="Enter address" name="address" required>
+          </div>
+          <div class="col-sm-6 form-group">
+            <label>School name</label>
+            <input type="text" class="form-control" id="school" placeholder="Enter School name" name="school" required>
+          </div>
+      </div>
+      <br>
+
+      <table class="table table-bordered dt-responsive nowrap" style="width:100%" >
+    <thead>
+      <tr>
+        <th>SUBJECTS</th>
+        <th colspan="3">MARKS</th>
+      </tr>
+      <tr>
+        <th></th>
+        <th>TERM-I (out of 100)</th>
+        <th>TERM-II (out of 100)</th>
+        <th>TERM-III (out of 100)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>MATHS</th>
+        <td><input type="number" id="m-1" required></td>
+        <td><input type="number" id="m-2" required></td>
+        <td><input type="number" id="m-3" required></td>
+      </tr>
+      <tr>
+        <th>HINDI</th>
+        <td><input type="number" id="h-4" required></td>
+        <td><input type="number" id="h-5" required></td>
+        <td><input type="number" id="h-6" required></td>
+      </tr>
+      <tr>
+        <th>ENGLISH</th>
+        <td><input type="number" id="e-7" required></td>
+        <td><input type="number" id="e-8" required></td>
+        <td><input type="number" id="e-9" required></td>
+      </tr>
+      <tr>
+        <th>SCIENCE</th>
+        <td><input type="number" id="s-10" required></td>
+        <td><input type="number" id="s-11" required></td>
+        <td><input type="number" id="s-12" required></td>
+      </tr>
+      <tr>
+        <th>COMPUTER</th>
+        <td><input type="number" id="c-13" required></td>
+        <td><input type="number" id="c-14" required></td>
+        <td><input type="number" id="c-15" required></td>
+      </tr>
+    </tbody>
+  </table>
+
+      <div class="row">
+        <div class="col-md-12 form-group wrapper">
+          <input type="submit" onclick="form_submit()"> 
+        </div>
+      </div>
+    </form>
 </div>
 
 <!-- Container (Contact Section) -->
@@ -104,12 +199,13 @@
 <footer class="text-center">
   <a class="up-arrow" href="#myPage" data-toggle="tooltip">
     <span class="glyphicon glyphicon-chevron-up"></span>
-  </a><br><br>
+  </a><br>
   <p>Footer<a data-toggle="tooltip"></a></p> 
 </footer>
 
 </body>
 
+<script src="./js/send.js"></script>
 <!-- carousel -->
 <script src="./3dslider.js"></script>
 <!-- Jquery -->

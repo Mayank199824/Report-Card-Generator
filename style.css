@@ -11,6 +11,13 @@
   .container {
     padding: 80px 120px;
   }
+  .wrapper{
+    text-align: center;
+  }
+  input[type="submit"]{
+  	font-size: 25px;
+  	border-radius: 20px;
+  }
   .btn {
     padding: 10px 20px;
     background-color: #333;
