@@ -1,47 +1,47 @@
 window.addEventListener('load', () => {	
 
 	/*receive information */
-	document.getElementById('stu').innerHTML= localStorage.getItem('STUDENT');
-	document.getElementById('dob').innerHTML= localStorage.getItem('BIRTH');
-  	document.getElementById('fat').innerHTML= localStorage.getItem('FATHER');
-  	document.getElementById('mot').innerHTML= localStorage.getItem('MOTHER');
-  	document.getElementById('sch').innerHTML= localStorage.getItem('SCHOOL');
-  	document.getElementById('add').innerHTML= localStorage.getItem('ADDRESS');
+	document.getElementById('stu').innerHTML= sessionStorage.getItem('STUDENT');
+	document.getElementById('dob').innerHTML= sessionStorage.getItem('BIRTH');
+  	document.getElementById('fat').innerHTML= sessionStorage.getItem('FATHER');
+  	document.getElementById('mot').innerHTML= sessionStorage.getItem('MOTHER');
+  	document.getElementById('sch').innerHTML= sessionStorage.getItem('SCHOOL');
+  	document.getElementById('add').innerHTML= sessionStorage.getItem('ADDRESS');
 
   	/*table receiving */
-  	document.getElementById('1').innerHTML= localStorage.getItem('M-1');
-  	document.getElementById('2').innerHTML= localStorage.getItem('M-2');
-  	document.getElementById('3').innerHTML= localStorage.getItem('M-3');
-  	document.getElementById('4').innerHTML= localStorage.getItem('H-4');
-  	document.getElementById('5').innerHTML= localStorage.getItem('H-5');
-  	document.getElementById('6').innerHTML= localStorage.getItem('H-6');
-  	document.getElementById('7').innerHTML= localStorage.getItem('E-7');
-  	document.getElementById('8').innerHTML= localStorage.getItem('E-8');
-  	document.getElementById('9').innerHTML= localStorage.getItem('E-9');
-  	document.getElementById('10').innerHTML= localStorage.getItem('S-10');
-  	document.getElementById('11').innerHTML= localStorage.getItem('S-11');
-  	document.getElementById('12').innerHTML= localStorage.getItem('S-12');
-  	document.getElementById('13').innerHTML= localStorage.getItem('C-13');
-  	document.getElementById('14').innerHTML= localStorage.getItem('C-14');
-  	document.getElementById('15').innerHTML= localStorage.getItem('C-15');
+  	document.getElementById('1').innerHTML= sessionStorage.getItem('M-1');
+  	document.getElementById('2').innerHTML= sessionStorage.getItem('M-2');
+  	document.getElementById('3').innerHTML= sessionStorage.getItem('M-3');
+  	document.getElementById('4').innerHTML= sessionStorage.getItem('H-4');
+  	document.getElementById('5').innerHTML= sessionStorage.getItem('H-5');
+  	document.getElementById('6').innerHTML= sessionStorage.getItem('H-6');
+  	document.getElementById('7').innerHTML= sessionStorage.getItem('E-7');
+  	document.getElementById('8').innerHTML= sessionStorage.getItem('E-8');
+  	document.getElementById('9').innerHTML= sessionStorage.getItem('E-9');
+  	document.getElementById('10').innerHTML= sessionStorage.getItem('S-10');
+  	document.getElementById('11').innerHTML= sessionStorage.getItem('S-11');
+  	document.getElementById('12').innerHTML= sessionStorage.getItem('S-12');
+  	document.getElementById('13').innerHTML= sessionStorage.getItem('C-13');
+  	document.getElementById('14').innerHTML= sessionStorage.getItem('C-14');
+  	document.getElementById('15').innerHTML= sessionStorage.getItem('C-15');
 
   	var total = 1500;
 
-  var num1 = localStorage.getItem('M-1');
-  var num2 = localStorage.getItem('M-2');
-  var num3 = localStorage.getItem('M-3');
-  var num4 = localStorage.getItem('H-4');
-  var num5 = localStorage.getItem('H-5');
-  var num6 = localStorage.getItem('H-6');
-  var num7 = localStorage.getItem('E-7');
-  var num8 = localStorage.getItem('E-8');
-  var num9 = localStorage.getItem('E-9');
-  var num10 = localStorage.getItem('S-10');
-  var num11 = localStorage.getItem('S-11');
-  var num12 = localStorage.getItem('S-12');
-  var num13 = localStorage.getItem('C-13');
-  var num14 = localStorage.getItem('C-14');
-  var num15 = localStorage.getItem('C-15');
+  var num1 = sessionStorage.getItem('M-1');
+  var num2 = sessionStorage.getItem('M-2');
+  var num3 = sessionStorage.getItem('M-3');
+  var num4 = sessionStorage.getItem('H-4');
+  var num5 = sessionStorage.getItem('H-5');
+  var num6 = sessionStorage.getItem('H-6');
+  var num7 = sessionStorage.getItem('E-7');
+  var num8 = sessionStorage.getItem('E-8');
+  var num9 = sessionStorage.getItem('E-9');
+  var num10 = sessionStorage.getItem('S-10');
+  var num11 = sessionStorage.getItem('S-11');
+  var num12 = sessionStorage.getItem('S-12');
+  var num13 = sessionStorage.getItem('C-13');
+  var num14 = sessionStorage.getItem('C-14');
+  var num15 = sessionStorage.getItem('C-15');
 
 
   var sum = parseFloat(num1) + parseFloat(num2) + parseFloat(num3) + parseFloat(num4) + parseFloat(num5) + parseFloat(num6) + 
